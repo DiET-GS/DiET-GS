@@ -13,3 +13,10 @@ Motion Deblurring 3D Gaussian Splatting</h1>
   <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
   </div>
 </p>
+
+## News:
+
+- [2025/02/27] DiET-GS is accepted to CVPR 2025 🔥. The code will be released at early June.
+
+## TODO
+- [ ] Release the code
