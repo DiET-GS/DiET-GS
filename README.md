@@ -16,7 +16,7 @@ Motion Deblurring 3D Gaussian Splatting</h1>
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/DiET-GS/DiET-GS.github.io/blob/main/static/images/teaser.png" alt="Logo" width="100%">
+    <img src="https://github.com/DiET-GS/DiET-GS/blob/main/teaser.png" alt="Logo" width="100%">
   </a>
 </p>
 <p align="center">
