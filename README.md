@@ -20,7 +20,6 @@ Motion Deblurring 3D Gaussian Splatting</h1>
   </a>
 </p>
 <p align="center">
-<p align="center">
 Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with recovering precise color and well-defined details from the blurry multi-view images.
 </p>
 </p>
