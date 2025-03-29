@@ -14,6 +14,17 @@ Motion Deblurring 3D Gaussian Splatting</h1>
   </div>
 </p>
 
+<p align="center">
+  <a href="">
+    <img src="https://github.com/DiET-GS/DiET-GS.github.io/blob/main/static/images/teaser.png" alt="Logo" width="100%">
+  </a>
+</p>
+<p align="center">
+<p align="center">
+Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with recovering precise color and well-defined details from the blurry multi-view images.
+</p>
+</p>
+
 ## News:
 
 - [2025/02/27] DiET-GS is accepted to CVPR 2025 🔥. The code will be released at early June.
