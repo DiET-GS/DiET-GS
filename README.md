@@ -8,7 +8,7 @@ Motion Deblurring 3D Gaussian Splatting</h1>
     Department of Computer Science, National University of Singapore<br>
   </p>
   <h2 align="center">CVPR 2025</h2>
-  <h3 align="center"><a href="https://github.com/DiET-GS/DiET-GS">Code</a> | <a href="">Paper</a> | <a href="https://diet-gs.github.io">Project Page</a> </h3>
+  <h3 align="center"><a href="https://github.com/DiET-GS/DiET-GS">Code</a> | <a href="https://arxiv.org/abs/2503.24210">Paper</a> | <a href="https://diet-gs.github.io">Project Page</a> </h3>
   <div align="center">
   <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
   </div>
@@ -34,10 +34,13 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 ## Citation
 If you find our code or paper useful, please cite
 ```bibtex
-@article{lee2024segment,
-      title = {Segment Any 3D Object with Language}, 
-      author = {Lee, Seungjun and Zhao, Yuyang and Lee, Gim Hee},
-      year = {2024},
-      journal   = {arXiv preprint arXiv:2404.02157},
+@misc{lee2025dietgsdiffusionpriorevent,
+      title={DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D Gaussian Splatting}, 
+      author={Seungjun Lee and Gim Hee Lee},
+      year={2025},
+      eprint={2503.24210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.24210}, 
 }
 ```
