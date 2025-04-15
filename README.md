@@ -34,13 +34,10 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 ## Citation
 If you find our code or paper useful, please cite
 ```bibtex
-@misc{lee2025dietgsdiffusionpriorevent,
-      title={DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D Gaussian Splatting}, 
-      author={Seungjun Lee and Gim Hee Lee},
-      year={2025},
-      eprint={2503.24210},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.24210}, 
+@article{lee2025diet,
+  title={DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D Gaussian Splatting},
+  author={Lee, Seungjun and Lee, Gim Hee},
+  journal={arXiv preprint arXiv:2503.24210},
+  year={2025}
 }
 ```
