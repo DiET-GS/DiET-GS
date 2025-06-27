@@ -63,6 +63,28 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 - [x] Release the code of DiET-GS
 - [ ] Release the code of DiEt-GS++
 
+## Installation
+
+You can set up a conda environment as follows:
+```
+
+```
+
+## Data Preparation
+
+We provide the two pre-processed data:
+- <a href="https://huggingface.co/datasets/onandon/DiET-GS/tree/main/ev-deblurnerf_blender">EvDeblur-blender</a>
+- <a href="https://huggingface.co/datasets/onandon/DiET-GS/tree/main/ev-deblurnerf_cdavis">EvDeblur-CDAVIS</a>
+
+Above dataset was originally proposed by <a href="https://github.com/uzh-rpg/evdeblurnerf">this work</a>.
+
+To facilitate the data preparation, we provide the python script to download all of the data. Run the script below:
+```
+python download_data.py
+```
+  
+
+
 ## Citation
 If you find our code or paper useful, please cite
 ```bibtex
