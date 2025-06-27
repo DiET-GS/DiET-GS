@@ -1,0 +1,4 @@
+# ninja log v5
+3	7910	1725443785384859664	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/simple_knn.o	48bf9621dcaaa526
+2	12154	1725443789629289400	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o	21539d1abdb5afc2
+3	38757	1725443816227979554	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o	a6ce8cda756219c5
