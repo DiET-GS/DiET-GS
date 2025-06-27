@@ -24,6 +24,36 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 </p>
 </p>
 
+<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#todo">TODO</a>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+    </li>
+    <li>
+      <a href="#data-preparation">Data Preparation</a>
+    </li>
+    <li>
+      <a href="#weights">Weights</a>
+    </li>
+    <li>
+      <a href="#download-data-and-weight">Download data and weight</a>
+    </li>
+    <li>
+      <a href="#training-and-testing">Training and Testing</a>
+    </li>
+    <li>
+      <a href="#acknowledgement">Acknowledgement</a>
+    </li>
+    <li>
+      <a href="#citation">Citation</a>
+    </li>
+  </ol>
+</details>
+
 ## News:
 
 - [2025/02/27] DiET-GS is accepted to CVPR 2025 🔥. The code will be released at early June.
