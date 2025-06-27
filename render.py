@@ -30,24 +30,6 @@ from utils.image_utils import psnr
 
 import pyiqa
 
-import threestudio
-from utils.config import load_config
-from utils.data import sample_patch
-
-"""
-cfg = load_config("config/dietgs.yaml")
-
-prompt_processor = threestudio.find(cfg.system.prompt_processor_type)(cfg.system.prompt_processor)
-prompt_processor.configure_text_encoder()
-prompt_processor.destroy_text_encoder()
-prompt_processor_output = prompt_processor()
-
-guidance = threestudio.find(cfg.system.guidance_type)(cfg.system.guidance)
-guidance.vae.enable_tiling()
-for p in guidance.parameters():
-    p.requires_grad=False
-"""
-
 def render_set(model_path, name, iteration, views, gaussians, pipeline, background):
     render_path = os.path.join(model_path, name, "ours_{}".format(iteration), "renders")
     gts_path = os.path.join(model_path, name, "ours_{}".format(iteration), "gt")
@@ -70,15 +52,6 @@ def render_set(model_path, name, iteration, views, gaussians, pipeline, backgrou
         
         rendering = torch.clamp(render(view, gaussians, pipeline, background)["render"], 0.0, 1.0)
         gt = torch.clamp(view.original_image[0:3, :, :], 0.0, 1.0)
-
-        """
-        with torch.no_grad():
-            rendering = F.interpolate(rendering.unsqueeze(0), scale_factor=4, mode='bicubic', align_corners=False)
-            rendering = (rendering * 2.0) - 1.0
-            latent = guidance.encode_images(rendering)
-            image = guidance.decode_latents(latent)
-            rendering = F.interpolate(image, scale_factor=0.25, mode='bicubic', align_corners=False)[0]
-        """
 
         if name == "test":
             psnr_test += psnr(rendering, gt).mean().double()
