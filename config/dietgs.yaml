@@ -1,0 +1,23 @@
+system_type: "dietgs-system"
+system:
+  prompt_processor_type: "stable-diffusion-prompt-processor"
+  prompt_processor:
+    pretrained_model_name_or_path: "stabilityai/stable-diffusion-x4-upscaler"
+    prompt: "objects, high resolution, 4K, photo"
+    spawn: false
+
+  guidance_type: "stable-diffusion-upscaler-rsd-guidance"
+  guidance:
+    guidance_scale: 10.0
+    half_precision_weights: true
+    pretrained_model_name_or_path: "stabilityai/stable-diffusion-x4-upscaler"
+    anneal_strategy: "linear"
+    min_step_percent: 0.5
+    max_step_percent: 0.98
+    anneal_end_step: 5000
+    anneal_start_step: 0
+    step_ratio : 0.001
+    guidance_type: 'rsd'
+    t_min_shift_per_stage: 0.0 # min time shift per stage
+    t_max_shift_per_stage: 0.0 # min time shift per stage
+    cfg_shift_per_stage: 0.0
