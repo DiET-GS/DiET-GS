@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='data/ev-deblurnerf_cdavis/blurlabequipment', model_path='pretrained/blurlabequipment, images='images', resolution=-1, white_background=False, data_device='cuda', eval=True)
