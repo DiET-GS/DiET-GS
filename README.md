@@ -76,12 +76,22 @@ We provide the two pre-processed data:
 - <a href="https://huggingface.co/datasets/onandon/DiET-GS/tree/main/ev-deblurnerf_blender">EvDeblur-blender</a>
 - <a href="https://huggingface.co/datasets/onandon/DiET-GS/tree/main/ev-deblurnerf_cdavis">EvDeblur-CDAVIS</a>
 
-Above dataset was originally proposed by <a href="https://github.com/uzh-rpg/evdeblurnerf">this work</a>.
+Above dataset was originally proposed by <a href="https://github.com/uzh-rpg/evdeblurnerf">this work</a>. In our work, we discard the provided ground-truth camera poses for multi-view images, as we assume such information is readily available in real-world scenarios, even when the images exhibit severe motion blur.
 
-To facilitate the data preparation, we provide the python script to download all of the data. Run the script below:
+To calibrate the camera poses of blurry multi-view images and construct the initial point clouds for 3D Gaussian Splatting (3DGS), we follow a two-step process:
+
+1. Deblur the blurry images with EDI processing.
+2. Feed EDI-deblurred multi-view images from step 1 to COLMAP, initializing the 3DGS.
+
+We also provide the toy example for EDI in <a href="https://github.com/DiET-GS/DiET-GS/blob/main/deblur_w_edi.ipynb">deblur_w_edi.ipynb</a>.
+
+You can download the calibrated camera poses and initial point clouds for all scenes in the dataset by running the code below.
 ```
 python download_data.py
 ```
+Note that the script above may also download additional files required for processing event streams during scene optimization.
+
+
   
 
 
