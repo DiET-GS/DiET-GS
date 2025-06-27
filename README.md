@@ -61,7 +61,7 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 
 ## TODO
 - [x] Release the code of DiET-GS
-- [ ] Release the code of DiEt-GS++
+- [ ] Release the code of DiET-GS++
 
 ## Installation
 
