@@ -1,7 +1,0 @@
-# ninja log v5
-1	7254	1725643869508179943	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/simple_knn.o	226b02bd81cde18a
-1	13237	1725643875452772447	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/ext.o	3a9cb4e27d851f9a
-1	36900	1725643899147132808	/data/sjlee/gaussian-splatting-event2/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/spatial.o	498783cc1fba8760
-11	7382	1725792584439296959	/data/sjlee/DiET-GS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/simple_knn.o	9319479d66fee1f7
-11	13685	1725792590723906416	/data/sjlee/DiET-GS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/ext.o	460136216fc25ce5
-12	34173	1725792611229894994	/data/sjlee/DiET-GS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/spatial.o	8432832f2dce2c82
