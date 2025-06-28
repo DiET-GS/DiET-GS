@@ -156,7 +156,7 @@ SCENE_NAME=blurbatteries
 python render.py -m output/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
 ```
 
-We also provide pretrained 3DGS in `pretrained/` folder. You can use 3DGS in this folder:
+We also provide pretrained 3DGS in <a href="https://github.com/DiET-GS/DiET-GS/blob/main/pretrained">pretrained/</a> folder. You can use 3DGS in this folder:
 ```
 SCENE_NAME=blurbatteries
 
