@@ -37,13 +37,10 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
       <a href="#data-preparation">Data Preparation</a>
     </li>
     <li>
-      <a href="#weights">Weights</a>
+      <a href="#per-scene-optimization-of-diet-gs-stage-1">Per-scene Optimiazation of DiET-GS (Stage 1)</a>
     </li>
     <li>
-      <a href="#download-data-and-weight">Download data and weight</a>
-    </li>
-    <li>
-      <a href="#training-and-testing">Training and Testing</a>
+      <a href="#render">Render</a>
     </li>
     <li>
       <a href="#acknowledgement">Acknowledgement</a>
@@ -91,7 +88,7 @@ python download_data.py
 ```
 Note that the script above may also download additional files required for processing event streams during scene optimization.
 
-Once you run the above command, the downloaded files will be located to designated path. Refer to the file structure:
+Once you run the above command, the downloaded files may be located to designated path. Refer to the file structure:
 ```
 data
 ├── ev-deblurnerf_cdavis   <- Real-world dataset
@@ -156,12 +153,20 @@ SCENE_NAME=blurbatteries
 python render.py -m output/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
 ```
 
-We also provide pretrained 3DGS in <a href="https://github.com/DiET-GS/DiET-GS/blob/main/pretrained">pretrained/</a> folder. You can use 3DGS in this folder:
+We also provide pretrained 3DGS in `pretrained/` folder. You can use 3DGS in this folder:
 ```
 SCENE_NAME=blurbatteries
 
 python render.py -m pretrained/ev-deblurnerf_cdavis/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
 ```
+
+## Acknowledgement
+
+Our work is inspired a lot from the following works. We sincerely appreciate to their great contributions!
+
+* <a href="https://github.com/iCVTEAM/E2NeRF">E2NeRF</a>
+* <a href="https://github.com/uzh-rpg/EvDeblurNeRF">Ev-DeblurNeRF</a>
+* <a href="https://github.com/leejielong/DiSR-NeRF">DiSR-NeRF</a>
 
 ## Citation
 If you find our code or paper useful, please cite
