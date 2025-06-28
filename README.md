@@ -91,8 +91,61 @@ python download_data.py
 ```
 Note that the script above may also download additional files required for processing event streams during scene optimization.
 
+Once you run the above command, the downloaded files may be located to designated path. Refer to the file structure:
+```
+data
+├── ev-deblurnerf_cdavis   <- Real-world dataset
+│   ├── blurbatteries      <- Scene name
+│   │   ├── events         <- Event files
+│   │   ├── images         <- N blurry multi-view images + 5 ground-truth clean images
+│   │   ├── images_edi     <- EDI-deblurred images (Just for COLMAP to initilize 3DGS)
+│   │   └── sparse         <- Initial point clouds and camera poses
+│   ├── blurfligures 
+│   └── ...
+│ 
+├── ev-deblurnerf_blender   <- Synthetic dataset
+│   ├── blurfactory
+│   │   ├── events
+│   │   ├── images
+│   │   ├── images_edi
+│   │   └── sparse
+│   ├── bluroutdoorpool
+│   └── ...
+```
 
-  
+## Per-scene Optimization
+
+Training DiET-GS without RSD loss on real-world dataset (fast training):
+```
+SCENE_NAME=blurbatteries
+
+python train_dietgs_wo_rsd_real.py -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --eval -m output/${SCENE_NAME} --event True --event_cmap color --edi_cmap gray --intensity True --edi_simul True --port 6035
+```
+
+Training DiET-GS without RSD loss on blender dataset (fast training):
+```
+SCENE_NAME=blurfactory
+
+python train_dietgs_wo_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eval -m output/${SCENE_NAME} --event True --event_cmap gray --edi_cmap gray --intensity True --edi_simul True --port 6035
+```
+
+Training DiET-GS with RSD loss on real-world dataset:
+```
+SCENE_NAME=blurbatteries
+
+python train_dietgs_real.py -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --eval -m output/${SCENE_NAME} --event True --event_cmap color --edi_cmap gray --intensity True --edi_simul True --port 6035
+```
+
+Training DiET-GS with RSD loss on blender dataset:
+```
+SCENE_NAME=blurfactory
+
+python train_dietgs_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eval -m output/${SCENE_NAME} --event True --event_cmap gray --edi_cmap gray --intensity True --edi_simul True --port 6042
+```
+
+📌 Note that we set the total iterations to 150000. However, DiET-GS usually converges to optimal performance between 40000-50000 iterations.
+
+## Render
 
 
 ## Citation
