@@ -91,7 +91,7 @@ python download_data.py
 ```
 Note that the script above may also download additional files required for processing event streams during scene optimization.
 
-Once you run the above command, the downloaded files may be located to designated path. Refer to the file structure:
+Once you run the above command, the downloaded files will be located to designated path. Refer to the file structure:
 ```
 data
 ├── ev-deblurnerf_cdavis   <- Real-world dataset
