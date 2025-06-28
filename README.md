@@ -113,7 +113,7 @@ data
 │   └── ...
 ```
 
-## Per-scene Optimization
+## Per-scene Optimization of DiET-GS (Stage 1)
 
 Training DiET-GS without RSD loss on real-world dataset (fast training):
 ```
@@ -144,6 +144,8 @@ python train_dietgs_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eva
 ```
 
 📌 Note that we set the total iterations to 150000. However, DiET-GS usually converges to optimal performance between 40000-50000 iterations.
+
+The code for additional optimization of DiET-GS++ (Stage 2) will be released soon!
 
 ## Render
 
