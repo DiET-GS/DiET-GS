@@ -43,7 +43,7 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
       <a href="#per-scene-optimization-of-diet-gs-stage-2">Per-scene Optimiazation of DiET-GS++ (Stage 2)</a>
     </li>
     <li>
-      <a href="#render">Render</a>
+      <a href="#render-diet-gs">Render DiET-GS</a>
     </li>
     <li>
       <a href="#acknowledgement">Acknowledgement</a>
@@ -149,7 +149,7 @@ python train_dietgs_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eva
 
 *The code for additional optimization of DiET-GS++ (Stage 2) will be released soon!*
 
-## Render
+## Render DiET-GS
 
 After the scene optimization, you can render the clean images. Specify the iteration number of the pretrained 3DGS model you wish to use.
 ```
