@@ -147,6 +147,19 @@ python train_dietgs_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eva
 
 ## Render
 
+After the scene optimization, you can render the clean images. Specify the iteration number of the pretrained 3DGS model you wish to use.
+```
+SCENE_NAME=blurbatteries
+
+python render.py -m output/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
+```
+
+We also provide pretrained 3DGS in `pretrained/` folder. You can use 3DGS in this folder:
+```
+SCENE_NAME=blurbatteries
+
+python render.py -m pretrained/ev-deblurnerf_cdavis/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
+```
 
 ## Citation
 If you find our code or paper useful, please cite
