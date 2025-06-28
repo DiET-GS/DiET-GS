@@ -165,8 +165,8 @@ python render.py -m pretrained/ev-deblurnerf_cdavis/${SCENE_NAME} -s data/ev-deb
 Our work is inspired a lot from the following works. We sincerely appreciate to their great contributions!
 
 * <a href="https://github.com/knelk/enerf">E-NeRF</a>
-* <a href="ttps://wengflow.github.io/robust-e-nerf/">Robust E-NeRF</a>
-* <a href="https://github.com/iCVTEAM/E2NeRF">E2NeRF</a>
+* <a href="https://wengflow.github.io/robust-e-nerf/">Robust E-NeRF</a>
+* <a href="https://github.com/iCVTEAM/E2NeRF">E<sup>2</sup>NeRF</a>
 * <a href="https://github.com/uzh-rpg/EvDeblurNeRF">Ev-DeblurNeRF</a>
 * <a href="https://github.com/leejielong/DiSR-NeRF">DiSR-NeRF</a>
 
