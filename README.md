@@ -72,6 +72,9 @@ cuda: 11.3
 ```
 You can set up a conda environment as follows:
 ```
+conda create name -n dietgs python=3.9
+conda activate dietgs
+
 pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 
 pip install -r requirements.txt
