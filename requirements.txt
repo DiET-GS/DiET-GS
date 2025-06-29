@@ -8,6 +8,7 @@ transformers==4.28.1
 pytorch-lightning==1.9.5
 matplotlib
 basicsr
+pyiqa
 git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 -e submodules/diff-gaussian-rasterization
 -e submodules/simple-knn
