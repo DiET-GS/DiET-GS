@@ -1,0 +1,13 @@
+tqdm
+omegaconf==2.3.0
+jaxtyping==0.2.12
+envlight==0.1.0
+accelerate==0.20.3
+diffusers==0.19.3
+transformers==4.28.1
+pytorch-lightning==1.9.5
+matplotlib
+basicsr
+git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+-e submodules/diff-gaussian-rasterization
+-e submodules/simple-knn

@@ -64,10 +64,23 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 - [ ] Release the code of DiET-GS++
 
 ## Installation
-
+### Dependencies :memo:
+The main dependencies of the project are the following:
+```yaml
+python: 3.9
+cuda: 11.3
+```
 You can set up a conda environment as follows:
 ```
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 
+pip install -r requirements.txt
+
+# if there is error, run
+pip install libigl==2.5.1
+pip install huggingface_hub==0.11.1
+pip install "Pillow<10"
+pip install numpy==1.23.4
 ```
 
 ## Data Preparation
