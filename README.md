@@ -43,10 +43,10 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
       <a href="#per-scene-optimization-of-diet-gs-stage-2">Per-scene Optimiazation of DiET-GS++ (Stage 2)</a>
     </li>
     <li>
-      <a href="#render-diet-gs">Render DiET-GS-stage-1</a>
+      <a href="#render-diet-gs-stage-1">Render DiET-GS (stage 1)</a>
     </li>
     <li>
-      <a href="#render-diet-gs">Render DiET-GS-stage-2</a>
+      <a href="#render-diet-gs-stage-2">Render DiET-GS++ (stage 2)</a>
     </li>
     <li>
       <a href="#acknowledgement">Acknowledgement</a>
