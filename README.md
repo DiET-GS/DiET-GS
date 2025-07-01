@@ -61,7 +61,7 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 
 - [2025/02/27] DiET-GS is accepted to CVPR 2025 🔥. The code will be released at early June.
 - [2025/06/27] The code of DiET-GS 🫨 is released 👊🏻! Now you can train DiET-GS and render the clean images.
-- [2025/07/01] The code of DiET-GS++ 🫨 is released 👊🏻! Check this <a href="https://github.com/DiET-GS/DiET-GSpp">repository</a to try DiET-GS++.
+- [2025/07/01] The code of DiET-GS++ 🫨 is released 👊🏻! Check <a href="https://github.com/DiET-GS/DiET-GSpp">this repository</a> to try DiET-GS++.
 
 ## TODO
 - [x] Release the code of DiET-GS
