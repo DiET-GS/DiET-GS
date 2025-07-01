@@ -1,6 +1,5 @@
 
 import sys
-sys.path.append("/data/sjlee/gaussian-splatting-event2")
 from dataclasses import dataclass, field
 from omegaconf import OmegaConf
 from threestudio.utils.typing import *
@@ -25,12 +24,3 @@ def load_config(*yamls: str, cli_args: list = [], from_string=False, **kwargs) -
 def parse_structured(fields: Any, cfg: Optional[Union[dict, DictConfig]] = None) -> Any:
     scfg = OmegaConf.structured(fields(**cfg))
     return scfg
-
-"""
-cfg = load_config("config/dietgs.yaml")
-
-import threestudio
-
-diff = threestudio.find(cfg.system.guidance_type)(cfg.system.guidance)
-import pdb; pdb.set_trace()
-"""
