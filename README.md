@@ -43,7 +43,10 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
       <a href="#per-scene-optimization-of-diet-gs-stage-2">Per-scene Optimiazation of DiET-GS++ (Stage 2)</a>
     </li>
     <li>
-      <a href="#render-diet-gs">Render DiET-GS</a>
+      <a href="#render-diet-gs">Render DiET-GS-stage-1</a>
+    </li>
+    <li>
+      <a href="#render-diet-gs">Render DiET-GS-stage-2</a>
     </li>
     <li>
       <a href="#acknowledgement">Acknowledgement</a>
@@ -58,10 +61,11 @@ Our <strong>DiET-GS++</strong> enables high quality novel-view synthesis with re
 
 - [2025/02/27] DiET-GS is accepted to CVPR 2025 🔥. The code will be released at early June.
 - [2025/06/27] The code of DiET-GS 🫨 is released 👊🏻! Now you can train DiET-GS and render the clean images.
+- [2025/07/01] The code of DiET-GS++ 🫨 is released 👊🏻! Check this <a href="https://github.com/DiET-GS/DiET-GSpp">repository</a to try DiET-GS++.
 
 ## TODO
 - [x] Release the code of DiET-GS
-- [ ] Release the code of DiET-GS++
+- [x] Release the code of DiET-GS++
 
 ## Installation
 ### Dependencies :memo:
@@ -163,9 +167,9 @@ python train_dietgs_blender.py -s data/ev-deblurnerf_blender/${SCENE_NAME} --eva
 
 ## Per-scene Optimization of DiET-GS++ (Stage 2)
 
-*The code for additional optimization of DiET-GS++ (Stage 2) will be released soon!*
+Check <a href="https://github.com/DiET-GS/DiET-GSpp">this repository</a> to optimize the DiET-GS++!
 
-## Render DiET-GS
+## Render DiET-GS (Stage 1)
 
 After the scene optimization, you can render the clean images. Specify the iteration number of the pretrained 3DGS model you wish to use.
 ```
@@ -180,6 +184,10 @@ SCENE_NAME=blurbatteries
 
 python render.py -m pretrained/ev-deblurnerf_cdavis/${SCENE_NAME} -s data/ev-deblurnerf_cdavis/${SCENE_NAME} --iteration 50000
 ```
+
+## Render DiET-GS++ (Stage 2)
+
+Check <a href="https://github.com/DiET-GS/DiET-GSpp">this repository</a> to render the novel views with DiET-GS++!
 
 ## Acknowledgement
 
