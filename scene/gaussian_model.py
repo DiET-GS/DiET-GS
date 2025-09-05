@@ -56,8 +56,9 @@ class GaussianModel:
         self.optimizer = None
         self.percent_dense = 0
         self.spatial_lr_scale = 0
-    
-        self.crf = CRF()
+
+        if crf:
+            self.crf = CRF()
 
         self.setup_functions()
 
